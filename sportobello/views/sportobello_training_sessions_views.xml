@@ -1,0 +1,222 @@
+<odoo>
+	<data>
+		<!-- Training Calendar List Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_sessions_list">
+			<field name="name">sportobello.training.sessions.list</field>
+			<field name="model">sportobello.training.sessions</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="date desc" class="ko-list-main">
+                    <field name="active" widget="boolean_toggle"/>
+					<field name="date"/>
+					<field name="session_of_day"/>
+					<field name="training_session_text_only" widget="html" class="ko-white-pre-wrap"/>
+					<field name="training_session_intended_for" widget="many2many_tags" optional="show"/>
+					<field name="training_session_completed_by" widget="many2many_tags" optional="hide"/>
+                    <field name="training_group_ids" widget="many2many_tags" optional="hide"/>
+				</list>
+			</field>
+		</record>
+		<!-- Training Calendar Readonly List View (for Athletes) -->
+		<record model="ir.ui.view" id="view_sportobello_training_sessions_list_readonly">
+			<field name="name">sportobello.training.sessions.list.readonly</field>
+			<field name="model">sportobello.training.sessions</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="date desc" class="ko-list-main ko-list-readonly-no-hover" create="0" edit="0" delete="0">
+					<field name="date"/>
+					<field name="session_of_day"/>
+					<field name="training_session_text_only" widget="html" class="ko-white-pre-wrap"/>
+				</list>
+			</field>
+		</record>
+		<!-- Training Calendar Form Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_sessions_form">
+			<field name="name">sportobello.training.sessions.form</field>
+			<field name="model">sportobello.training.sessions</field>
+			<field name="arch" type="xml">
+				<form>
+					<link rel="stylesheet" type="text/css" href="/sportobello_kojto_inherit/static/src/css/custom.css"/>
+					<style>
+						.o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="sequence"],
+						.o_list_renderer.o_renderer.table-responsive .o_list_table td[name="sequence"] {
+							max-width: 30px !important;
+							padding: 8px 0 !important;
+						}
+						.o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="training_session_id"],
+						.o_list_renderer.o_renderer.table-responsive .o_list_table td[name="training_session_id"] {
+							max-width: 200px !important;
+							text-align: left !important;
+						}
+						.o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="training_session_description"],
+						.o_list_renderer.o_renderer.table-responsive .o_list_table td[name="training_session_description"] {
+							max-width: 600px !important;
+							text-align: left !important;
+						}
+						.o_field_one2many[name="training_session_line_ids"] table > thead > tr {
+							border-left: 1px solid rgba(11, 83, 148, 0.2) !important;
+							border-right: 1px solid rgba(11, 83, 148, 0.2) !important;
+							border-bottom: 1px solid rgba(11, 83, 148, 0.2) !important;
+							border-top: 1px solid rgba(11, 83, 148, 0.2) !important;
+						}
+						.o_field_one2many[name="training_session_line_ids"] table > thead > tr > th {
+							border-left: 0px !important;
+							border-right: 0px !important;
+							border-bottom: 0px !important;
+							border-top: 0px !important;
+						}
+
+						/* Handle widget styling */
+						.o_field_one2many[name="training_session_line_ids"] td[name="sequence"] {
+							cursor: move !important;
+							text-align: center !important;
+							padding: 8px 4px !important;
+						}
+						.o_field_one2many[name="training_session_line_ids"] td[name="sequence"] .o_row_handle {
+							display: inline-block !important;
+							cursor: move !important;
+							width: 20px !important;
+							position: relative !important;
+							margin: 0 auto !important;
+							vertical-align: middle !important;
+						}
+						.o_field_one2many[name="training_session_line_ids"] td[name="sequence"] .o_row_handle:before {
+							display: block !important;
+							width: 4px !important;
+							left: 50% !important;
+							top: 50% !important;
+						}
+                        .o_list_renderer .o_data_row.o_dragged {
+                            display: flex;
+                            background-color: rgb(255, 255, 255) !important;
+                            vertical-align: middle !important;
+                        }
+
+					</style>
+					<sheet class="form-body">
+						<div class="oe_title mb-5">
+							<h1>Training Session</h1>
+						</div>
+                        <separator class="col-12 separator" />
+						<div class="row">
+							<group class="col-6">
+								<field name="date" placeholder="Date"/>
+								<field name="session_of_day"/>
+                            </group>
+						</div>
+                        <separator class="col-12 separator" />
+						<div class="row my-5">
+							<group class="col-12">
+								<field name="training_session_line_ids" nolabel="1">
+									<list editable="bottom" class="ko-list-main">
+										<field name="sequence" widget="handle"/>
+										<field name="training_session_id" />
+                                        <field name="training_session_description"/>
+									</list>
+								</field>
+							</group>
+						</div>
+                        <separator class="col-12 separator" />
+						<div class="row">
+							<group class="col-10">
+								<field name="training_group_ids" widget="many2many_tags" placeholder="Training Groups"/>
+                            </group>
+                            <group class="col-2">
+								<div style="display: flex; gap: 4px">
+									<button name="action_insert_all_training_groups" type="object" class="btn btn-sm fa fa-plus" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Insert All"/>
+									<button name="action_clear_training_group_ids" type="object" class="btn btn-sm fa fa-times" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Clear"/>
+								</div>
+                            </group>
+						</div>
+                        <separator class="col-12 separator" />
+						<div class="row">
+                            <group class="col-10">
+								<field name="training_session_intended_for" widget="many2many_tags" placeholder="For Athletes"/>
+                            </group>
+                            <group class="col-2">
+								<div style="display: flex; gap: 4px">
+									<button name="action_insert_all_athletes_for" type="object" class="btn btn-sm fa fa-plus" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Insert All"/>
+									<button name="action_clear_training_session_intended_for" type="object" class="btn btn-sm fa fa-times" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Clear"/>
+								</div>
+                            </group>
+						</div>
+                        <separator class="col-12 separator" />
+						<div class="row">
+                            <group class="col-10">
+                                <field name="training_session_completed_by" widget="many2many_tags" placeholder="Completed by Athletes" style="flex: 1;"/>
+                            </group>
+                            <group class="col-2">
+								<div style="display: flex; gap: 4px">
+									<button name="action_insert_all_athletes_completed_by" type="object" class="btn btn-sm fa fa-plus" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Insert All"/>
+									<button name="action_clear_training_session_completed_by" type="object" class="btn btn-sm fa fa-times" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Clear"/>
+								</div>
+                            </group>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<!-- Training Calendar Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_sessions_search">
+			<field name="name">sportobello.training.sessions.search</field>
+			<field name="model">sportobello.training.sessions</field>
+			<field name="arch" type="xml">
+				<search>
+                    <field name="active"/>
+                    <field name="name"/>
+					<field name="date"/>
+					<field name="session_of_day"/>
+					<field name="training_group_ids"/>
+					<field name="training_session_intended_for"/>
+					<field name="training_session_completed_by"/>
+					<filter string="Active" name="active" domain="[('active', '=', True)]"/>
+					<filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+				</search>
+			</field>
+		</record>
+		<!-- Actions to Return Model Views -->
+		<record model="ir.actions.act_window" id="action_sportobello_training_sessions">
+			<field name="name">Training Calendar</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.training.sessions</field>
+			<field name="view_mode">list,form</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Create Calendar Entry</p>
+			</field>
+		</record>
+		<!-- Action for Athletes - Readonly List View Only -->
+		<record model="ir.actions.act_window" id="action_sportobello_training_sessions_readonly">
+			<field name="name">Training Calendar</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.training.sessions</field>
+			<field name="view_mode">list</field>
+			<field name="view_id" ref="view_sportobello_training_sessions_list_readonly"/>
+			<field name="context">{'create': False, 'edit': False, 'delete': False}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Training Sessions</p>
+			</field>
+		</record>
+		<!-- Server Actions for Activate/Archive -->
+		<record model="ir.actions.server" id="action_activate_training_sessions">
+			<field name="name">Activate</field>
+			<field name="model_id" ref="model_sportobello_training_sessions"/>
+			<field name="binding_model_id" ref="model_sportobello_training_sessions"/>
+			<field name="binding_view_types">list</field>
+			<field name="state">code</field>
+			<field name="code">
+                if records:
+                    records.write({'active': True})
+			</field>
+		</record>
+		<record model="ir.actions.server" id="action_archive_training_sessions">
+			<field name="name">Archive</field>
+			<field name="model_id" ref="model_sportobello_training_sessions"/>
+			<field name="binding_model_id" ref="model_sportobello_training_sessions"/>
+			<field name="binding_view_types">list</field>
+			<field name="state">code</field>
+			<field name="code">
+                if records:
+                    records.write({'active': False})
+			</field>
+		</record>
+	</data>
+</odoo>

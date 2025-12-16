@@ -1,0 +1,2116 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sportobello
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 15:17+0000\n"
+"PO-Revision-Date: 2025-12-11 15:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_training_sessions__session_of_day__1
+msgid "1st"
+msgstr "1-ва"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_training_sessions__session_of_day__2
+msgid "2nd"
+msgstr "2-ра"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_training_sessions__session_of_day__3
+msgid "3rd"
+msgstr "3-та"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_training_sessions__session_of_day__4
+msgid "4th"
+msgstr "4-та"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_training_sessions__session_of_day__5
+msgid "5th"
+msgstr "5-та"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "<span class=\"fw-bold\" style=\"color: #184D8E;\">Anthropometric Data</span>"
+msgstr ""
+"<span class=\"fw-bold\" style=\"color: #184D8E;\">Антропометрични "
+"данни</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "<span class=\"fw-bold\" style=\"color: #184D8E;\">Functional Testing</span>"
+msgstr "<span class=\"fw-bold\" style=\"color: #184D8E;\">Функционални тестове</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "<span class=\"fw-bold\" style=\"color: #184D8E;\">Overtraining Tracking</span>"
+msgstr ""
+"<span class=\"fw-bold\" style=\"color: #184D8E;\">Проследяване на "
+"претренираност</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "<span class=\"fw-bold\" style=\"color: #184D8E;\">Personal Information</span>"
+msgstr "<span class=\"fw-bold\" style=\"color: #184D8E;\">Лична информация</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">ADD ATHLETE</span>"
+msgstr "<span class=\"landing_page_text\">ДОБАВИ СЪСТЕЗАТЕЛ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">ATHLETE</span>"
+msgstr "<span class=\"landing_page_text\">СЪСТЕЗАТЕЛ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">ATHLETES</span>"
+msgstr "<span class=\"landing_page_text\">СЪСТЕЗАТЕЛИ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">COACHES</span>"
+msgstr "<span class=\"landing_page_text\">ТРЕНЬОРИ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit_competitions
+msgid "<span class=\"landing_page_text\">COMPETITIONS</span>"
+msgstr "<span class=\"landing_page_text\">СЪСТЕЗАНИЯ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit_control_races
+msgid "<span class=\"landing_page_text\">CONTROL RACES</span>"
+msgstr "<span class=\"landing_page_text\">КОНТРОЛНИ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit_club
+msgid "<span class=\"landing_page_text\">THE CLUB</span>"
+msgstr "<span class=\"landing_page_text\">КЛУБЪТ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">TRAINING CALENDAR</span>"
+msgstr "<span class=\"landing_page_text\">КАЛЕНДАР НА ТРЕНИРОВКИТЕ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">TRAINING ELEMENTS</span>"
+msgstr "<span class=\"landing_page_text\">ТРЕНИРОВЪЧНИ ЕЛЕМЕНТИ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_kojto_landingpage_form_inherit
+msgid "<span class=\"landing_page_text\">TRAINING GROUPS</span>"
+msgstr "<span class=\"landing_page_text\">ТРЕНИРОВЪЧНИ ГРУПИ</span>"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid ""
+"<strong>Explanations:</strong><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Height</strong> - Height in centimeters (cm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Weight</strong> - Weight in kilograms (kg)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>BMI</strong> - Body Mass Index<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Wingspan</strong> - Wingspan in centimeters (cm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>BF%</strong> - Body Fat Percentage (%)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>MM</strong> - Muscle Mass in kilograms (kg)"
+msgstr ""
+"<strong>Обяснения:</strong><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Ръст</strong> - Ръст в сантиметри (cm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Тегло</strong> - Тегло в килограми (kg)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>BMI</strong> - BMI<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Размах </strong> - Размах  в сантиметри (cm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>BF%</strong> - Tелесни мазнини (%)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>MM</strong> - MM/kg в килограми (kg)"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid ""
+"<strong>Explanations:</strong><br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>Max HR</strong> - Maximum Heart Rate in beats per minute (bpm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>VO2max</strong> - Maximum Oxygen Capacity (ml/min)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>VO2max/kg</strong> - Maximum Oxygen Capacity per kilogram (ml/min/kg)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>MaxW</strong> - Maximum Power (W)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>MaxW/kg</strong> - Maximum Power per kilogram (W/kg)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>EPZ</strong> - Effective Pulse Zone<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>RQ1/W</strong> - Respiratory Quotient at 1W<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>La2</strong> - Lactate after 2 minutes (mmol/L)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>La6</strong> - Lactate after 6 minutes (mmol/L)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>La15</strong> - Lactate after 15 minutes (mmol/L)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>HR2</strong> - Heart Rate after 2 minutes (bpm)<br/>\n"
+"\t\t\t\t\t\t\t\t\t\t\t<strong>HR6</strong> - Heart Rate after 6 minutes (bpm)"
+msgstr ""
+"<strong>Обяснения:</strong><br/>&#13;\n"
+"<strong>Max HR</strong> - Максимална сърдечна честота в удари в минута (bpm)<br/>&#13;\n"
+"<strong>VO2max</strong> - Максимален кислороден капацитет (ml/min)<br/>&#13;\n"
+"<strong>VO2max/kg</strong> - Максимален кислороден капацитет на килограм (ml/min/kg)<br/>&#13;\n"
+"<strong>MaxW</strong> - Максимална мощност (W)<br/>&#13;\n"
+"<strong>MaxW/kg</strong> - Максимална мощност на килограм (W/kg)<br/>&#13;\n"
+"<strong>EPZ</strong> - EPZ<br/>&#13;\n"
+"<strong>RQ1/W</strong> - Респираторен коефициент при 1W<br/>&#13;\n"
+"<strong>La2</strong> - Лактат след 2 минути (mmol/L)<br/>&#13;\n"
+"<strong>La6</strong> - Лактат след 6 минути (mmol/L)<br/>&#13;\n"
+"<strong>La15</strong> - Лактат след 15 минути (mmol/L)<br/>&#13;\n"
+"<strong>HR2</strong> - Пулс след 2 минути (bpm)<br/>&#13;\n"
+"<strong>HR6</strong> - Пулс след 6 минути (bpm)&#13;"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid ""
+"<strong>Explanations:</strong><br/>\n"
+"                                            <strong>RHR</strong> - Resting Heart Rate (bpm - beats per minute). Measured either as the lowest heart rate during the night or first thing in the morning before getting out of bed. RHR indicates baseline cardiovascular stress and recovery status. An unusually high RHR can signal fatigue, insufficient recovery, or overtraining.<br/>\n"
+"                                            <strong>HRR 1min</strong> - Heart Rate Recovery after 1 minute (bpm drop). The difference between peak heart rate at the end of exercise and heart rate after 1 minute of passive recovery. A slower recovery (smaller drop) can indicate fatigue, high training load, or autonomic imbalance.<br/>\n"
+"                                            <strong>Submax HR</strong> - Heart Rate at Submaximal Load (bpm). Measured during a standardized moderate-intensity effort, this indicates cardiovascular efficiency and adaptation. Higher-than-normal values may suggest fatigue or overreaching.<br/>\n"
+"                                            <strong>CMJ</strong> - Countermovement Jump (cm - centimeters). A measure of explosive lower-body power. Decreases over time can indicate neuromuscular fatigue or overtraining.<br/>\n"
+"                                            <strong>STT</strong> - Sprint Time Trial (seconds). Measures sprint performance over a fixed distance. Slower times may reflect muscular fatigue, poor recovery, or overreaching.<br/>\n"
+"                                            <strong>BLa</strong> - Blood Lactate Level at Standardized Load (mmol/L ×10 or μmol/L). Assesses metabolic stress during exercise. Elevated lactate at a given load can indicate reduced efficiency or fatigue accumulation.<br/>\n"
+"                                            <strong>GS L</strong> - Grip Strength Left (kg). Simple neuromuscular test for overall fatigue and muscle readiness. Significant drops may suggest systemic fatigue.<br/>\n"
+"                                            <strong>GS R</strong> - Grip Strength Right (kg). Same as above, for the right hand. Tracking both sides can highlight asymmetries caused by fatigue, injury, or overuse.<br/>\n"
+"                                            <em>Note:</em> Together, these parameters provide a holistic view of physiological, neuromuscular, and metabolic status, helping to detect early signs of overreaching or overtraining."
+msgstr ""
+"<strong>Обяснения:</strong><br/>\n"
+"                                            <strong>RHR</strong> - RHR (bpm - удари в минута). Измерва се като най-ниският пулс през нощта или сутринта преди ставане от леглото. RHR показва базовото сърдечно-съдово натоварване и състоянието на възстановяване. Необичайно висок RHR може да сигнализира умора, недостатъчно възстановяване или претренираност.<br/>\n"
+"                                            <strong>HRR 1min</strong> - Възстановяване на пулса след 1 минута (спад в bpm). Разликата между пиковия пулс в края на упражнението и пулса след 1 минута пасивно възстановяване. По-бавно възстановяване (по-малък спад) може да показва умора, високо тренировъчно натоварване или вегетативен дисбаланс.<br/>\n"
+"                                            <strong>Submax HR</strong> - Пулс при субмаксимално натоварване (bpm). Измерва се по време на стандартизирано умереноинтензивно усилие, показва сърдечно-съдовата ефективност и адаптация. По-високи от нормалните стойности могат да показват умора или прекомерно натоварване.<br/>\n"
+"                                            <strong>CMJ</strong> - CMJ (cm - сантиметри). Мярка за експлозивна сила на долната част на тялото. Намаленията с времето могат да показват невромускулна умора или претренираност.<br/>\n"
+"                                            <strong>STT</strong> - Спортен времеви тест (секунди). Измерва спортната производителност на фиксирано разстояние. По-бавни времена могат да показват мускулна умора, лошо възстановяване или прекомерно натоварване.<br/>\n"
+"                                            <strong>BLa</strong> - Ниво на лактат в кръвта при стандартизирано натоварване (mmol/L ×10 или μmol/L). Оценява метаболитен стрес по време на упражнение. Повишено ниво на лактат при дадено натоварване може да показва намалена ефективност или натрупване на умора.<br/>\n"
+"                                            <strong>GS L</strong> - Сила на хват лява ръка (kg). Прост невромускулен тест за обща умора и готовност на мускулите. Значителни спадове могат да показват системна умора.<br/>\n"
+"                                            <strong>GS R</strong> - Сила на хват дясна ръка (kg). Същото като по-горе, за дясната ръка. Проследяването на двете страни може да подчертае асиметрии, причинени от умора, нараняване или прекомерна употреба.<br/>\n"
+"                                            <em>Забележка:</em> Заедно тези параметри предоставят цялостен поглед върху физиологичното, невромускулното и метаболитното състояние, помагайки за откриване на ранни признаци на прекомерно натоварване или претренираност."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr_at
+msgid "AT"
+msgstr "AT"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr_at
+msgid ""
+"AT zone (Anaerobic Threshold). High-intensity training, around ~85% of Max "
+"HR."
+msgstr ""
+"AT зона (Анаеробен праг). Високоинтензивна тренировка, около ~85% от "
+"максималния пулс."
+
+#. module: sportobello
+#: model:ir.actions.server,name:sportobello.action_activate_training_sessions
+msgid "Activate"
+msgstr "Активиране"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__active
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__active
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__active
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__active
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__active
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_search
+msgid "Active"
+msgstr "Активен"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_list
+msgid "Add System User to Athlete"
+msgstr "Добави системен потребител към състезател"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__training_group_ids
+msgid "Add athletes from groups"
+msgstr "Тренировъчни групи"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Additional Measurements"
+msgstr "Допълнителни измервания"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Additional Notes"
+msgstr "Допълнителни бележки"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_form
+msgid "Additional Notes for Assessment"
+msgstr "Допълнителни бележки към оценката"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+msgid "Additional Notes for Test"
+msgstr "Допълнителни бележки към теста"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__notes
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__notes
+msgid "Additional notes for the assessment"
+msgstr "Допълнителни бележки към оценката"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__notes
+msgid "Additional notes for the test"
+msgstr "Допълнителни бележки към теста"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__address
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_address_line
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+msgid "Address"
+msgstr "Адрес"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_allergies
+msgid "Allergies"
+msgstr "Алергии"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Allergies and Reactions"
+msgstr "Алергии и реакции"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_athlete_anthropometric_tracker
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__anthropometric_tracker_ids
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_athlete_anthropometric_tracker
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_search
+msgid "Anthropometric Data"
+msgstr "Антропометрични данни"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_athlete_anthropometric_tracker
+msgid "Anthropometric Tracker"
+msgstr "Проследяване на антропометрични данни"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__participation_applied
+msgid "Applied"
+msgstr "Заявка"
+
+#. module: sportobello
+#: model:ir.actions.server,name:sportobello.action_archive_training_sessions
+msgid "Archive"
+msgstr "Архив"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_search
+msgid "Archived"
+msgstr "Архивен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__arm_length_left
+msgid "Arm L L"
+msgstr "Дължина ръка Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__arm_length_right
+msgid "Arm L R"
+msgstr "Дължина ръка Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__arm_length_left
+msgid "Arm Length Left - Left arm length in centimeters (cm)"
+msgstr "Дължина на лявата ръка в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__arm_length_right
+msgid "Arm Length Right - Right arm length in centimeters (cm)"
+msgstr "Дължина на дясната ръка в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__assessment_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__assessment_date
+msgid "Assessment Date"
+msgstr "Дата"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__associated_contact_id
+msgid "Associated Contact"
+msgstr "Свързан контакт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__associated_user_id
+msgid "Associated User"
+msgstr "Свързан потребител"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__athlete_id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__athlete_id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__athlete_id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_full_name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Athlete"
+msgstr "Състезател"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__athlete_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__athlete_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__athlete_name
+msgid "Athlete Name"
+msgstr "Име на спортсмена"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "Athlete must have a birth date to generate a system user"
+msgstr "Състезателят трябва да има въведена дата на раждане, за да се създаде системен потребител"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "Athlete must have a first name to generate a system user"
+msgstr "Състезателят трябва да има въведено собствено име, за да се създаде системен потребител"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "Athlete must have an identification number"
+msgstr "Спортсменът трябва да има идентификационен номер"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_athletes
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__athlete_ids
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__athlete_ids
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__athlete_ids
+#: model:ir.ui.menu,name:sportobello.menu_sportsclub_athletes
+#: model:ir.ui.menu,name:sportobello.menu_sportsclub_athletes_parent
+#: model:res.groups,name:sportobello.group_sportobello_athletes
+msgid "Athletes"
+msgstr "Състезатели"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__body_fat_percentage
+msgid "BF%"
+msgstr "BF%"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__blood_lactate_level
+msgid "BLa"
+msgstr "BLa"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__bone_mass
+msgid "BM"
+msgstr "Костна маса"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__bmi
+msgid "BMI"
+msgstr "BMI"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_anthropometric_tracker.py:0
+msgid "BMI cannot be negative"
+msgstr "Индексът на телесна маса не може да бъде отрицателен"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Basic Measurements"
+msgstr "Основни измервания"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__bicep_circumference_left
+msgid "Bicep C L"
+msgstr "Обиколка бицепс Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__bicep_circumference_right
+msgid "Bicep C R"
+msgstr "Обиколка бицепс Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__bicep_circumference_left
+msgid ""
+"Bicep Circumference Left - Left bicep circumference in centimeters (cm)"
+msgstr "Обиколка на левия бицепс в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__bicep_circumference_right
+msgid ""
+"Bicep Circumference Right - Right bicep circumference in centimeters (cm)"
+msgstr "Обиколка на десния бицепс в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_birth_date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Birth Date"
+msgstr "Дата на раждане"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__blood_lactate_level
+msgid "BLa - Blood lactate level in mmol/L ×10 or μmol/L"
+msgstr "BLa – Лактат в кръвта в mmol/L ×10 или μmol/L"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Body Composition"
+msgstr "Телесен състав"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Body Dimensions"
+msgstr "Размери на тялото"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__body_fat_percentage
+msgid "Body Fat Percentage - Body fat (%)"
+msgstr "Tелесни мазнини (%)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__bmi
+msgid "BMI"
+msgstr "BMI"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__bone_mass
+msgid "Bone mass in kg"
+msgstr "Костна маса в kg"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__countermovement_jump_height
+msgid "CMJ"
+msgstr "CMJ"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__calendar_id
+msgid "Calendar"
+msgstr "Календар"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__calf_circumference_left
+msgid "Calf C L"
+msgstr "Обиколка прасец Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__calf_circumference_right
+msgid "Calf C R"
+msgstr "Обиколка прасец Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__calf_circumference_left
+msgid "Calf Circumference Left - Left calf circumference in centimeters (cm)"
+msgstr "Обиколка на левия прасец в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__calf_circumference_right
+msgid ""
+"Calf Circumference Right - Right calf circumference in centimeters (cm)"
+msgstr "Обиколка на десния прасец в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__chest_circumference
+msgid "Chest C"
+msgstr "Обиколка гърди"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__chest_circumference
+msgid "Chest Circumference - Chest circumference in centimeters (cm)"
+msgstr "Обиколка на гърдите в сантиметри (cm)"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+msgid "Circumferences"
+msgstr "Обиколки"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__city
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_city
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "City"
+msgstr "Град"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Clear"
+msgstr "Изчисти"
+
+#. module: sportobello
+#: model:ir.ui.menu,name:sportobello.menu_sportobello
+msgid "Club"
+msgstr "Клуб"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Club Name"
+msgstr "Име на клуба"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "Coach"
+msgstr "Треньор"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_coaches
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__coaches
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_coaches
+#: model:res.groups,name:sportobello.group_sportobello_coaches
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+msgid "Coaches"
+msgstr "Треньори"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__company_id
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Company"
+msgstr "Фирма"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_competitions
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_competitions
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_competitions_search
+msgid "Competitions"
+msgstr "Състезания"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__training_session_completed_by
+msgid "Completed by"
+msgstr "Завършено от състезатели"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Completed by Athletes"
+msgstr "Завършено от състезатели"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__participation_confirmed
+msgid "Confirmed"
+msgstr "Потвърдено"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_control_race_types
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_control_race_types_search
+msgid "Control Race Types"
+msgstr "Видове контролни състезания"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_control_races
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__control_races_ids
+#: model:ir.ui.menu,name:sportobello.menu_control_races
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_control_races_parent
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_control_races_search
+msgid "Control Races"
+msgstr "Контролни състезания"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__athlete_count
+msgid "Count"
+msgstr "Брой"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__countermovement_jump_height
+msgid "Countermovement Jump - CMJ jump height in centimeters (cm)"
+msgstr "CMJ – Клек с отскок височина на скока в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_country
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Country"
+msgstr "Държава"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_county
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "County"
+msgstr "Област"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_coaches
+msgid "Create"
+msgstr "Създай"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_training_sessions
+msgid "Create Calendar Entry"
+msgstr "Създай запис в календара"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Create Contact"
+msgstr "Създай контакт"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athlete_anthropometric_tracker
+msgid "Create First Anthropometric Data Record."
+msgstr "Създай първи запис с антропометрични данни."
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_competitions
+msgid "Create First Competition"
+msgstr "Създай първо състезание"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athlete_functional_test_tracker
+msgid "Create First Functional Testing Record."
+msgstr "Създай първи запис на функционален тест."
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athlete_overtraining_tracker
+msgid "Create First Overtraining Tracking Record."
+msgstr "Създай първи запис за проследяване на претренираност."
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athlete_training_group
+msgid "Create New Training Group"
+msgstr "Създай нова тренировъчна група"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_training_session_elements
+msgid "Create Training"
+msgstr "Създаване на обучение"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_training_session_lines
+msgid "Create Training Session Calendar Line"
+msgstr "Създаване на ред в календара за тренировки"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_control_race_types
+msgid "Create your first control race type."
+msgstr "Създай първия си вид контролно състезание."
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_control_races
+msgid "Create your first control race."
+msgstr "Създай първото си контролно състезание."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__create_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__create_uid
+msgid "Created by"
+msgstr "Създаден от"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__create_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__create_date
+msgid "Created on"
+msgstr "Създаден на"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_competitions_search
+msgid "Current"
+msgstr "Текущи"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Date"
+msgstr "Дата"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__description
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__description
+msgid "Description"
+msgstr "Описание"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__description_en
+msgid "Description EN"
+msgstr "Описание EN"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_disease
+msgid "Diseases"
+msgstr "Заболявания"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Diseases or Medical Conditions"
+msgstr "Заболявания или медицински състояния"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_kojto_landingpage__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__display_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__display_name
+msgid "Display Name"
+msgstr "Екранно име"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_distance
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__distance
+msgid "Distance"
+msgstr "Дистанция"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_distance
+msgid "Distance in kilometers (e.g. 10.50 for 10.50km)"
+msgstr "Дистанция в километри (напр. 10.50 за 10.50 км)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__effective_pulse_zone
+msgid "EPZ"
+msgstr "EPZ"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "ERROR!"
+msgstr "ГРЕШКА!"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__effective_pulse_zone
+msgid "Effective Pulse Zone - Effective pulse zone"
+msgstr "EPZ"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__training_session_line_ids
+msgid "Elements"
+msgstr "Тренировки"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__email
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_email
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__email
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Email"
+msgstr "Имейл"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__emergency_contact_name
+msgid "Emergency Contact Name"
+msgstr "Име на спешен контакт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__emergency_contact_phone
+msgid "Emergency Contact Phone"
+msgstr "Телефон на спешен контакт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__emergency_contact_relationship
+msgid "Emergency Contact Relationship"
+msgstr "Връзка със спешен контакт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__date_end
+msgid "End Date"
+msgstr "Крайна дата"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_competitions.py:0
+msgid "End date cannot be before start date."
+msgstr "Крайната дата не може да бъде преди началната."
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_training_group_form
+msgid "Enter Group Name"
+msgstr "Въведете име на групата"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Exercise heart rate cannot be negative"
+msgstr "Пулсът по време на упражнение не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_athletes__parent_relationship__father
+msgid "Father"
+msgstr "Баща"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_athletes__athlete_gender__female
+msgid "Female"
+msgstr "Жена"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_first_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__first_name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "First Name"
+msgstr "Собствено име"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__foot_length_left
+msgid "Foot L L"
+msgstr "Дължина стъпало Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__foot_length_right
+msgid "Foot L R"
+msgstr "Дължина стъпало Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__foot_length_left
+msgid "Foot Length Left - Left foot length in centimeters (cm)"
+msgstr "Дължина на лявото стъпало в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__foot_length_right
+msgid "Foot Length Right - Right foot length in centimeters (cm)"
+msgstr "Дължина на дясното стъпало в сантиметри (cm)"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "For Athletes"
+msgstr "За състезатели"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__full_name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+msgid "Full Name"
+msgstr "Пълно име"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_athlete_functional_test_tracker
+#: model:ir.model,name:sportobello.model_sportobello_athlete_functional_test_tracker
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__functional_test_tracker_ids
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_athlete_functional_test_tracker
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_search
+msgid "Functional Testing"
+msgstr "Функционални тестове"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__grip_strength_left
+msgid "GS L"
+msgstr "GS L"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__grip_strength_right
+msgid "GS R"
+msgstr "GS R"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_gender
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Gender"
+msgstr "Пол"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__grip_strength_left
+msgid "Grip Strength Left - Left hand strength in kg"
+msgstr "Сила на хвата лява ръка в килограми"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__grip_strength_right
+msgid "Grip Strength Right - Right hand strength in kg"
+msgstr "Сила на хвата дясна ръка в килограми"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Group By"
+msgstr "Групиране по"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__name
+msgid "Group Name"
+msgstr "Име на групата"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_training_group_search
+msgid "Groups with Athletes"
+msgstr "Групи със състезатели"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_athletes__parent_relationship__guardian
+msgid "Guardian"
+msgstr "Настойник"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr2
+msgid "HR2"
+msgstr "HR2"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr2
+msgid "HR2 - Heart rate 2 minutes after test end"
+msgstr "Пулс 2 минути след края на теста"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "HR2 cannot be negative"
+msgstr "Пулсът след 2 минути не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr6
+msgid "HR6"
+msgstr "HR6"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr6
+msgid "HR6 - Heart rate 6 minutes after test end"
+msgstr "Пулс 6 минути след края на теста"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "HR6 cannot be negative"
+msgstr "Пулсът след 6 минути не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__heart_rate_recovery_1min
+msgid "HRR 1min"
+msgstr "HRR 1min"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__hand_length_left
+msgid "Hand L L"
+msgstr "Дължина длан Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__hand_length_right
+msgid "Hand L R"
+msgstr "Дължина длан Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__hand_length_left
+msgid "Hand Length Left - Left hand length in centimeters (cm)"
+msgstr "Дължина на лявата длан в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__hand_length_right
+msgid "Hand Length Right - Right hand length in centimeters (cm)"
+msgstr "Дължина на дясната длан в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_heart_rate
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__heart_rate
+msgid "Heart Rate"
+msgstr "Пулс"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_form
+msgid "Heart Rate Metrics"
+msgstr "Пулсови показатели"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__heart_rate_recovery_1min
+msgid "Heart Rate Recovery 1 minute - Heart rate drop after 1 minute in bpm"
+msgstr "Възстановяване на пулса след 1 минута – спад в bpm"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_heart_rate
+msgid "Heart rate in beats per minute (e.g. 100 for 100bpm)"
+msgstr "Пулс в удари в минута (напр. 100 за 100 bpm)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Heart rate recovery cannot be negative"
+msgstr "Възстановяването на пулса не може да бъде отрицателно"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__height
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_height
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__height
+msgid "Height"
+msgstr "Ръст"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__height
+msgid "Height - Height in centimeters (cm)"
+msgstr "Ръст в сантиметри (cm)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_anthropometric_tracker.py:0
+msgid "Height cannot be negative"
+msgstr "Ръстът не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_height
+msgid "Height in centimeters"
+msgstr "Ръст в сантиметри"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__hip_circumference
+msgid "Hip C"
+msgstr "Обиколка ханш"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__hip_circumference
+msgid "Hip Circumference - Hip circumference in centimeters (cm)"
+msgstr "Обиколка на ханша в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__hire_date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "Hire Date"
+msgstr "Дата на назначаване"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_kojto_landingpage__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__id
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__id
+msgid "ID"
+msgstr "Име"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__identifier
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "ID Number"
+msgstr "Идентификационен номер"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Inactive"
+msgstr "Неактивен"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Insert All"
+msgstr "Вмъкни всички"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Jump height cannot be negative"
+msgstr "Височината на скока не може да бъде отрицателна"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_kojto_landingpage
+msgid "Kojto Landing Page"
+msgstr "Целева страница Kojto"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__la15
+msgid "La15"
+msgstr "La15"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__la15
+msgid "La15 - Lactate 15 minutes after test end"
+msgstr "La15 - Лактат 15 минути след края на теста"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "La15 cannot be negative"
+msgstr "Лактатът след 15 минути не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__la2
+msgid "La2"
+msgstr "La2"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__la2
+msgid "La2 - Lactate 2 minutes after test end"
+msgstr "La2 - Лактат 2 минути след края на теста"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "La2 cannot be negative"
+msgstr "Лактатът след 2 минути не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__la6
+msgid "La6"
+msgstr "La6"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__la6
+msgid "La6 - Lactate 6 minutes after test end"
+msgstr "La6"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "La6 cannot be negative"
+msgstr "Лактатът след 6 минути не може да бъде отрицателен"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+msgid "Lactate"
+msgstr "Лактат"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Lactate level cannot be negative"
+msgstr "Нивото на лактат не може да бъде отрицателно"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_search
+msgid "Last 30 Days"
+msgstr "Последните 30 дни"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_last_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__last_name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "Last Name"
+msgstr "Фамилия"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__write_uid
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__write_uid
+msgid "Last Updated by"
+msgstr "Последно обновен от"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_training_group__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__write_date
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__write_date
+msgid "Last Updated on"
+msgstr "Последно обновен на"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__leg_length_left
+msgid "Leg L L"
+msgstr "Дължина крак Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__leg_length_right
+msgid "Leg L R"
+msgstr "Дължина крак Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__leg_length_left
+msgid "Leg Length Left - Left leg length in centimeters (cm)"
+msgstr "Дължина на левия крак в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__leg_length_right
+msgid "Leg Length Right - Right leg length in centimeters (cm)"
+msgstr "Дължина на десния крак в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_length
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__length
+msgid "Length"
+msgstr "Дължина"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_length
+msgid "Length in meters"
+msgstr "Дължина в метри"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__license_number
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+msgid "License Number"
+msgstr "Номер на лиценз"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athletes__athlete_allergies
+msgid "List of allergies and reactions"
+msgstr "Списък с алергии и реакции"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athletes__athlete_disease
+msgid "List of diseases or medical conditions"
+msgstr "Списък със заболявания или медицински състояния"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__location
+msgid "Location"
+msgstr "Място"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__muscle_mass
+msgid "MM"
+msgstr "MM/kg"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_athletes__athlete_gender__male
+msgid "Male"
+msgstr "Мъж"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr_max
+msgid "Max HR"
+msgstr "Max HR"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__w_max
+msgid "MaxW"
+msgstr "MaxW"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__w_max
+msgid "MaxW (Maximum Power) - Maximum power (W)"
+msgstr "MaxW (W)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__w_max_per_kg
+msgid "MaxW/kg"
+msgstr "MaxW/кг"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__w_max_per_kg
+msgid "MaxW/kg - Maximum power per kilogram (W/kg)"
+msgstr "Максимална мощност на килограм (W/kg)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "MaxW/kg cannot be negative"
+msgstr "Максималната мощност на килограм не може да бъде отрицателна"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "Maximum heart rate cannot be negative"
+msgstr "Максималният пулс не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr_max
+msgid ""
+"Maximum heart rate in bpm. Used as reference to calculate heart rate zones."
+msgstr ""
+"Максимален пулс в bpm. Използва се като референция за изчисляване на "
+"пулсовите зони."
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "Maximum power cannot be negative"
+msgstr "Максималната мощност не може да бъде отрицателна"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__control_race_measure
+msgid "Measure Type"
+msgstr "Вид измерване"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__control_race_measure
+msgid "Measurement Type"
+msgstr "Тип измерване"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_middle_name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__middle_name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "Middle Name"
+msgstr "Презиме"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_athletes__parent_relationship__mother
+msgid "Mother"
+msgstr "Майка"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_coaches__title__mr
+msgid "Mr"
+msgstr "Г-н"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_coaches__title__mrs
+msgid "Mrs"
+msgstr "Г-жа"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__muscle_mass
+msgid "MM - Muscle mass in kilograms (kg)"
+msgstr "ММ - Mускулна маса в килограми (kg)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes_inherit.py:0
+msgid "My Athlete Profile"
+msgstr ""
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_race_types__name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__name
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__name
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Name"
+msgstr "Име"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_nationality
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Nationality"
+msgstr "Националност"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__neck_circumference
+msgid "Neck C"
+msgstr "Обиколка врат"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__neck_circumference
+msgid "Neck Circumference - Neck circumference in centimeters (cm)"
+msgstr "Обиколка на врата в сантиметри (cm)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes_inherit.py:0
+msgid "New Athlete"
+msgstr "Нов спортсмен"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes_inherit.py:0
+msgid "No Athlete Profile"
+msgstr "Няма профил на състезател"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes_inherit.py:0
+msgid "No athlete profile is associated with your user account."
+msgstr "Няма свързан профил на състезател с вашия потребителски акаунт."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__note
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_elements__note
+msgid "Note"
+msgstr "Забележка"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__notes
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__notes
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__notes
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_anthropometric_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_form
+msgid "Notes"
+msgstr "Бележки"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Open Contact"
+msgstr "Отвори контакт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_other
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__other
+msgid "Other"
+msgstr "Друго"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_other
+msgid "Other (e.g. \"rating\" for rating 10)"
+msgstr "Друго (напр. „рейтинг“ за рейтинг 10)"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+msgid "Other Metrics"
+msgstr "Други показатели"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_athlete_overtraining_tracker
+#: model:ir.model,name:sportobello.model_sportobello_athlete_overtraining_tracker
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__overtraining_tracker_ids
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_athlete_overtraining_tracker
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_search
+msgid "Overtraining Tracking"
+msgstr "Проследяване на претренираност"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+msgid "Oxygen Metrics"
+msgstr "Кислородни показатели"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_email
+msgid "Parent Email"
+msgstr "Имейл на родител"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_first_name
+msgid "Parent First Name"
+msgstr "Собствено име на родител"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_last_name
+msgid "Parent Last Name"
+msgstr "Фамилия на родител"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_middle_name
+msgid "Parent Middle Name"
+msgstr "Презиме на родител"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_phone
+msgid "Parent Phone"
+msgstr "Телефон на родител"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_competitions_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_control_races_search
+msgid "Past"
+msgstr "Минали"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_overtraining_tracker_form
+msgid "Performance Metrics"
+msgstr "Показатели за представяне"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__phone
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_phone
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__phone
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Phone"
+msgstr "Телефон"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__participation_planned
+msgid "Planned"
+msgstr "Планирано"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_functional_test_tracker_form
+msgid "Power"
+msgstr "Мощност"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__resting_heart_rate
+msgid "RHR"
+msgstr "RHR"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__rq1_per_w
+msgid "RQ1/W"
+msgstr "RQ1/W"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__rq1_per_w
+msgid "RQ1/W - Respiratory quotient at 1W"
+msgstr "RQ1/W"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "RQ1/W cannot be negative"
+msgstr "Дихателният коефициент не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__reach_height
+msgid "Reach Height - Reach height in centimeters (cm)"
+msgstr "Достигната височина в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__reach_height
+msgid "Reach Ht"
+msgstr "Достигната височина"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_recent_medical_exam_date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Recent Medical Exam Date"
+msgstr "Дата на последен медицински преглед"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athletes
+msgid "Register Athlete"
+msgstr "Регистрирай спортсмен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_registry_number
+msgid "Registry #"
+msgstr "Регистрационен номер"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_registry_date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Registry Date"
+msgstr "Дата на регистрация"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_registry_institution
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Registry Institution"
+msgstr "Регистрираща институция"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Registry Number"
+msgstr "Регистрационен номер"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Relationship"
+msgstr "Връзка"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__parent_relationship
+msgid "Relationship to Athlete"
+msgstr "Връзка със спортсмена"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_repetitions
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__repetitions
+msgid "Repetitions"
+msgstr "Повторения"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_repetitions
+msgid "Repetitions (e.g. 10 for 10 repetitions)"
+msgstr "Повторения (напр. 10 за 10 повторения)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__resting_heart_rate
+msgid "Resting Heart Rate - Resting heart rate in beats per minute (bpm)"
+msgstr "RHR - пулс в покой"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Resting heart rate cannot be negative"
+msgstr "Пулсът в покой не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__sprint_time_trial
+msgid "STT"
+msgstr "STT"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_training_group_search
+msgid "Search Training Groups"
+msgstr "Търсене на тренировъчни групи"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__sequence
+msgid "Sequence"
+msgstr "Последователност"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__session_of_day
+msgid "Session"
+msgstr "№ за деня"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__shoulder_width
+msgid "Shoulder W"
+msgstr "Ширина рамене"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__shoulder_width
+msgid "Shoulder Width - Shoulder width in centimeters (cm)"
+msgstr "Ширина на раменете в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__sitting_height
+msgid "Sitting Height - Sitting height in centimeters (cm)"
+msgstr "Височина в седнало положение в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__sitting_height
+msgid "Sitting Ht"
+msgstr "Височина седнал"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__specialization
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+msgid "Specialization"
+msgstr "Специализация"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__sportsclub_id
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_search
+msgid "Sport Club"
+msgstr "Спортен клуб"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_athletes
+msgid "Sport Club Athletes"
+msgstr "Състезатели на клуба"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_competitions
+msgid "Sport Club Competitions"
+msgstr "Състезания на клуба"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_control_race_types
+msgid "Sport Club Control Race Types"
+msgstr "Видове контролни състезания на клуба"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_control_races
+msgid "Sport Club Control Races"
+msgstr "Контролни състезания на клуба"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello
+msgid "Sport Clubs"
+msgstr "Спортни клубове"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello
+msgid "Sportobello Sport Club"
+msgstr "Спортен клуб Sportobello"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_coaches
+msgid "Sportobello Sport Club Coaches"
+msgstr "Треньори на спортен клуб Sportobello"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_training_session_elements
+msgid "Sportobello Sport Club Training Session Elements"
+msgstr "Елементи на тренировката на Sportobello Sport Club"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__sprint_time_trial
+msgid "Sprint Time Trial - Sprint time or trial time in seconds (s)"
+msgstr "Спринт – време в секунди (s)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_overtraining_tracker.py:0
+msgid "Sprint time cannot be negative"
+msgstr "Времето за спринт не може да бъде отрицателно"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_competitions__date_start
+msgid "Start Date"
+msgstr "Начална дата"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_strength
+msgid "Strength"
+msgstr "Сила"
+
+#. module: sportobello
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__strength
+msgid "Strength / Weight"
+msgstr "Сила / Тегло"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_strength
+msgid "Strength in kilograms (e.g. 100 for 100kg)"
+msgstr "Сила в килограми (напр. 100 за 100 кг)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_overtraining_tracker__submaximal_exercise_heart_rate
+msgid "Submax HR"
+msgstr "Submax HR"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_overtraining_tracker__submaximal_exercise_heart_rate
+msgid "Submaximal Exercise Heart Rate - Heart rate at fixed load in bpm"
+msgstr ""
+"Submax HR - Пулс при субмаксимално натоварване"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "Symbols <, >, and & are not allowed in field %s"
+msgstr "Символите <, > и & не са разрешени в полето %s"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "System user created with email: %s and password: %s"
+msgstr "Системен потребител създаден с имейл: %s и парола: %s"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr_t
+msgid ""
+"T zone (Transportation). Very high-intensity training, around ~95% of Max "
+"HR."
+msgstr ""
+"T зона (Транспорт). Много високоинтензивна тренировка, около ~95% от "
+"максималния пулс."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__test_date
+msgid "Test Date"
+msgstr "Дата на тест"
+
+#. module: sportobello
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_parent
+msgid "The Club"
+msgstr "Клубът"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__thigh_circumference_left
+msgid "Thigh C L"
+msgstr "Обиколка бедро Л"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__thigh_circumference_right
+msgid "Thigh C R"
+msgstr "Обиколка бедро Д"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__thigh_circumference_left
+msgid ""
+"Thigh Circumference Left - Left thigh circumference in centimeters (cm)"
+msgstr "Обиколка на лявото бедро в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__thigh_circumference_right
+msgid ""
+"Thigh Circumference Right - Right thigh circumference in centimeters (cm)"
+msgstr "Обиколка на дясното бедро в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__measure_time
+#: model:ir.model.fields.selection,name:sportobello.selection__sportobello_control_race_types__control_race_measure__time
+msgid "Time"
+msgstr "Време"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_control_races__measure_time
+msgid "Time in MM:SS format"
+msgstr "Време във формат ММ:СС"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__title
+msgid "Title"
+msgstr "Обръщение"
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_control_races_search
+msgid "Today"
+msgstr "Днес"
+
+#. module: sportobello
+#: model:ir.ui.menu,name:sportobello.menu_sportobello_training_parent
+msgid "Training"
+msgstr "Тренировки"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_training_sessions
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_training_sessions_readonly
+#: model:ir.ui.menu,name:sportobello.menu_training_sessions
+msgid "Training Calendar"
+msgstr "Тренировки"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__training_session_id
+msgid "Training Element"
+msgstr "Тренировка"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_training_session_elements
+msgid "Training Elements"
+msgstr "Елементи на обучението"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_athlete_training_group
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_training_group_form
+msgid "Training Group"
+msgstr "Тренировъчна група"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_athlete_training_group
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__training_group_ids
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athlete_training_group_list
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Training Groups"
+msgstr "Тренировъчни групи"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__training_session_text_only
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_sessions_form
+msgid "Training Session"
+msgstr "Тренировкa"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_training_session_lines
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_training_session_lines_form
+msgid "Training Session Calendar Line"
+msgstr "Ред от календара на тренировъчните сесии"
+
+#. module: sportobello
+#: model:ir.actions.act_window,name:sportobello.action_sportobello_training_session_lines
+msgid "Training Session Calendar Lines"
+msgstr "Редове от календара на тренировъчните сесии"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_session_lines__training_session_description
+msgid "Training Session Description"
+msgstr "Описание на тренировката"
+
+#. module: sportobello
+#: model:ir.ui.menu,name:sportobello.menu_training_session_elements_parent
+msgid "Training Session Elements"
+msgstr "Елементи"
+
+#. module: sportobello
+#: model:ir.model,name:sportobello.model_sportobello_training_sessions
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_training_sessions_readonly
+msgid "Training Sessions"
+msgstr "Тренировки на клуба Sportobello"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_training_sessions__training_session_intended_for
+msgid "Training for"
+msgstr "Тренировка за"
+
+#. module: sportobello
+#: model_terms:ir.actions.act_window,help:sportobello.action_sportobello_athlete_training_group
+msgid ""
+"Training groups allow you to organize athletes into different groups for "
+"easier management."
+msgstr ""
+"Тренировъчните групи ви позволяват да организирате състезателите в различни "
+"групи за по-лесно управление."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_control_races__control_race_type_id
+msgid "Type"
+msgstr "Вид"
+
+#. module: sportobello
+#: model:ir.ui.menu,name:sportobello.menu_control_race_types
+msgid "Types"
+msgstr "Видове"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr_u1
+msgid "U1"
+msgstr "U1"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr_u1
+msgid ""
+"U1 zone (Mainly Utilisation). Moderate-intensity training, around ~80% of "
+"Max HR."
+msgstr ""
+"U1 зона (Основно използване). Умереноинтензивна тренировка, около ~80% от "
+"максималния пулс."
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__hr_u2
+msgid "U2"
+msgstr "U2"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__hr_u2
+msgid "U2 zone (Utilisation 2). Low-intensity training, up to ~75% of Max HR."
+msgstr ""
+"U2 зона (Използване 2). Нискоинтензивна тренировка, до ~75% от максималния "
+"пулс."
+
+#. module: sportobello
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_competitions_search
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_control_races_search
+msgid "Upcoming"
+msgstr "Предстоящи"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "User Already Exists"
+msgstr ""
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "User Created Successfully"
+msgstr ""
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athletes.py:0
+msgid "User with email %s already exists and has been linked to this athlete."
+msgstr ""
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__visceral_fat
+msgid "VF"
+msgstr "Висцерални мазнини"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__vo2max
+msgid "VO2max"
+msgstr "VO2max"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__vo2max
+msgid "VO2max - Maximum oxygen capacity (ml/min)"
+msgstr "Максимален кислороден капацитет (ml/min)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "VO2max cannot be negative"
+msgstr "VO2max не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_functional_test_tracker__vo2max_per_kg
+msgid "VO2max/kg"
+msgstr "VO2max/кг"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_functional_test_tracker__vo2max_per_kg
+msgid "VO2max/kg - Maximum oxygen capacity per kilogram (ml/min/kg)"
+msgstr "Максимален кислороден капацитет на килограм (ml/min/kg)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_functional_test_tracker.py:0
+msgid "VO2max/kg cannot be negative"
+msgstr "VO2max/kg не може да бъде отрицателен"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_coaches__license_expiry_date
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_coaches_form
+msgid "Valid Until"
+msgstr "Валиден до"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__visceral_fat
+msgid "Visceral Fat - Visceral fat"
+msgstr "Висцерални мазнини"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__waist_circumference
+msgid "Waist C"
+msgstr "Обиколка талия"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__waist_circumference
+msgid "Waist Circumference - Waist circumference in centimeters (cm)"
+msgstr "Обиколка на талията в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__water_percentage
+msgid "Water Percentage - Water percentage (%)"
+msgstr "Процент вода (%)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__water_percentage
+msgid "Water%"
+msgstr "Вода %"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello__website
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_form
+msgid "Website"
+msgstr "Уебсайт"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__weight
+msgid "Weight"
+msgstr "Тегло"
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__weight
+msgid "Weight - Weight in kilograms (kg)"
+msgstr "Тегло в килограми (kg)"
+
+#. module: sportobello
+#. odoo-python
+#: code:addons/sportobello/models/sportobello_athlete_anthropometric_tracker.py:0
+msgid "Weight cannot be negative"
+msgstr "Теглото не може да бъде отрицателно"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athlete_anthropometric_tracker__wingspan
+msgid "Wingspan"
+msgstr "Размах "
+
+#. module: sportobello
+#: model:ir.model.fields,help:sportobello.field_sportobello_athlete_anthropometric_tracker__wingspan
+msgid "Wingspan - Wingspan in centimeters (cm)"
+msgstr "Размах  в сантиметри (cm)"
+
+#. module: sportobello
+#: model:ir.model.fields,field_description:sportobello.field_sportobello_athletes__athlete_zip_code
+#: model_terms:ir.ui.view,arch_db:sportobello.view_sportobello_athletes_form
+msgid "Zip Code"
+msgstr "Пощенски код"

@@ -1,0 +1,69 @@
+<odoo>
+	<data>
+		<!-- Training Calendar Line List Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_session_lines_list">
+			<field name="name">sportobello.training.session.lines.list</field>
+			<field name="model">sportobello.training.session.lines</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="sequence, id" class="ko-list-main">
+					<field name="sequence" widget="handle"/>
+					<field name="calendar_id"/>
+					<field name="training_session_id"/>
+					<field name="training_session_description" widget="html" class="ko-white-pre-wrap" optional="show"/>
+				</list>
+			</field>
+		</record>
+		<!-- Training Calendar Line Form Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_session_lines_form">
+			<field name="name">sportobello.training.session.lines.form</field>
+			<field name="model">sportobello.training.session.lines</field>
+			<field name="arch" type="xml">
+				<form>
+					<link rel="stylesheet" type="text/css" href="/sportobello_kojto_inherit/static/src/css/custom.css"/>
+					<sheet class="form-body">
+						<div class="oe_title mb-5">
+							<h1>Training Session Calendar Line</h1>
+						</div>
+						<div class="row my-5">
+							<group class="col-6">
+								<field name="calendar_id" options="{'no_create': True, 'no_open': False, 'no_quick_create': True}"/>
+								<field name="sequence"/>
+							</group>
+							<group class="col-6">
+								<field name="training_session_id" options="{'no_create': True, 'no_open': False, 'no_quick_create': True}"/>
+							</group>
+						</div>
+						<div class="row">
+							<group class="col-12">
+								<field name="training_session_description" readonly="1"/>
+							</group>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<!-- Training Calendar Line Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_session_lines_search">
+			<field name="name">sportobello.training.session.lines.search</field>
+			<field name="model">sportobello.training.session.lines</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="calendar_id"/>
+					<field name="training_session_id"/>
+					<field name="training_session_description"/>
+				</search>
+			</field>
+		</record>
+		<!-- Actions to Return Model Views -->
+		<record model="ir.actions.act_window" id="action_sportobello_training_session_lines">
+			<field name="name">Training Session Calendar Lines</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.training.session.lines</field>
+			<field name="view_mode">list,form</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Create Training Session Calendar Line</p>
+			</field>
+		</record>
+	</data>
+</odoo>

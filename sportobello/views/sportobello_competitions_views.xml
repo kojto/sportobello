@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<!-- List Views -->
+		<record model="ir.ui.view" id="view_sportobello_competitions_list">
+			<field name="name">sportobello.competitions.list</field>
+			<field name="model">sportobello.competitions</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="date_start desc" class="ko-list-main" editable="bottom">
+                    <field name="participation_planned" widget="boolean_toggle"/>
+                    <field name="participation_applied" widget="boolean_toggle" optional="hide"/>
+                    <field name="participation_confirmed" widget="boolean_toggle"/>
+					<field name="date_start"/>
+					<field name="date_end"/>
+					<field name="name"/>
+                    <field name="athlete_count" optional="show"/>
+                    <field name="athlete_ids" widget="many2many_tags" optional="show"/>
+                    <field name="note" widget="html" optional="hide"/>
+				</list>
+			</field>
+		</record>
+
+		<!-- Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_competitions_search">
+			<field name="name">sportobello.competitions.search</field>
+			<field name="model">sportobello.competitions</field>
+			<field name="arch" type="xml">
+				<search string="Competitions">
+					<field name="name"/>
+					<field name="date_start"/>
+					<field name="date_end"/>
+					<separator/>
+					<filter name="upcoming" string="Upcoming" domain="[('date_start', '>=', context_today().strftime('%Y-%m-%d'))]"/>
+					<filter name="past" string="Past" domain="[('date_end', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+					<filter name="current" string="Current" domain="[('date_start', '&lt;=', context_today().strftime('%Y-%m-%d')), ('date_end', '>=', context_today().strftime('%Y-%m-%d'))]"/>
+				</search>
+			</field>
+		</record>
+
+		<!-- Actions -->
+		<record model="ir.actions.act_window" id="action_sportobello_competitions">
+			<field name="name">Competitions</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.competitions</field>
+			<field name="view_mode">list</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Create First Competition</p>
+			</field>
+		</record>
+	</data>
+</odoo>

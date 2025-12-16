@@ -1,0 +1,42 @@
+<odoo>
+	<data>
+		<!-- List Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_session_elements_list">
+			<field name="name">sportobello.training.session.elements.list</field>
+			<field name="model">sportobello.training.session.elements</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="name desc" editable="bottom" class="ko-list-main">
+					<field name="active" widget="boolean_toggle"/>
+					<field name="name"/>
+					<field name="description"/>
+                    <field name="description_en" optional="hide"/>
+                    <field name="note" optional="show"/>
+				</list>
+			</field>
+		</record>
+		<!-- Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_training_session_elements_search">
+			<field name="name">sportobello.training.session.elements.search</field>
+			<field name="model">sportobello.training.session.elements</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="name"/>
+					<field name="description"/>
+                    <field name="description_en"/>
+                    <field name="note"/>
+				</search>
+			</field>
+		</record>
+		<!-- Actions to Return Model Views -->
+		<record model="ir.actions.act_window" id="action_sportobello_training_session_elements">
+			<field name="name">Training Elements</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.training.session.elements</field>
+			<field name="view_mode">list</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Create Training</p>
+			</field>
+		</record>
+	</data>
+</odoo>

@@ -1,0 +1,168 @@
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="view_kojto_landingpage_form_inherit">
+			<field name="name">kojto.landingpage.form.inherit</field>
+			<field name="model">kojto.landingpage</field>
+			<field name="inherit_id" ref="kojto_landingpage.view_kojto_landingpage_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//comment()[.=' Button group 03 ']" position="after">
+					<div class="landing_page_item" groups="base.group_erp_manager,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_athletes_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+									<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+								</svg>
+							</div>
+							<span class="landing_page_text">ATHLETES</span>
+						</button>
+					</div>
+					<div class="landing_page_item" groups="sportobello.group_sportobello_athletes">
+						<button name="open_current_user_athlete_form" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+									<path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+								</svg>
+							</div>
+							<span class="landing_page_text">ATHLETE</span>
+						</button>
+					</div>
+					<div class="landing_page_item" groups="base.group_erp_manager,kojto_base.kojto_administrator,sportobello.group_sportobello_coaches">
+						<button name="open_new_sportsclub_athlete_form" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+									<path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+									<path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+								</svg>
+							</div>
+							<span class="landing_page_text">ADD ATHLETE</span>
+						</button>
+					</div>
+					<div class="landing_page_item" groups="base.group_erp_manager,kojto_base.kojto_administrator,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_training_groups_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">TRAINING GROUPS</span>
+						</button>
+					</div>
+					<!-- Sportobello Sport Club - Coaches -->
+					<div class="landing_page_item" groups="base.group_erp_manager,kojto_base.kojto_administrator,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_coaches_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="landing_page_svg_icon" fill="currentColor">
+                                    <path d="M389-258q-75 0-128.5-53.5T207-440q0-14.67 2.5-29.33Q212-484 215-492q-4 2-8 2h-7.51q-29.49 0-48.99-19.72Q131-529.44 131-558q0-28.56 18.99-48.28Q168.99-626 198-626q26 0 45 15.5t22 38.5q23-24 57-37t67-13h440v56H571v126q0 75.83-53.08 128.92Q464.83-258 389-258ZM199-518q17 0 28.5-11.5T239-558q0-17-11.5-28.5T199-598q-17 0-28.5 11.5T159-558q0 17 11.5 28.5T199-518Zm190.14 232Q453-286 498-331.14t45-109Q543-504 497.86-549t-109-45Q325-594 280-548.86t-45 109Q235-376 280.14-331t109 45Zm.04-94q24.82 0 42.32-17.68 17.5-17.67 17.5-42.5 0-24.82-17.68-42.32-17.67-17.5-42.5-17.5-24.82 0-42.32 17.68-17.5 17.67-17.5 42.5 0 24.82 17.68 42.32 17.67 17.5 42.5 17.5Zm-.18-60Z"/></svg>
+							</div>
+							<span class="landing_page_text">COACHES</span>
+						</button>
+					</div>
+					<!-- Sportobello Sport Club - Training Calendar -->
+					<div class="landing_page_item" groups="base.group_erp_manager,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_training_sessions_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon" fill="currentColor">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">TRAINING CALENDAR</span>
+						</button>
+					</div>
+					<!-- Sportobello Sport Club - Training Calendar -->
+					<div class="landing_page_item" groups="sportobello.group_sportobello_athletes">
+						<button name="open_sportobello_training_sessions_list_readonly_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon" fill="currentColor">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5zM11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">TRAINING CALENDAR</span>
+						</button>
+					</div>
+					<!-- Sportobello Sport Club - Training Elements -->
+					<div class="landing_page_item" groups="base.group_erp_manager,kojto_base.kojto_administrator,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_training_session_elements_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="landing_page_svg_icon" fill="currentColor">
+                                    <path d="M219.8-112Q150-112 101-161.2t-49-119Q52-350 101.2-399t119-49q69.8 0 118.8 49.2t49 119q0 69.8-49.2 118.8t-119 49Zm-.04-28Q278-140 319-180.76q41-40.77 41-99Q360-338 319.24-379q-40.77-41-99-41Q162-420 121-379.24q-41 40.77-41 99Q80-222 120.76-181q40.77 41 99 41ZM466-226v-197L324-526q-8-7-12.5-16.75-4.5-9.74-4.5-20.5 0-10.75 4.5-19.75t12.5-17l118-118q8-8 18.97-12.5 10.97-4.5 23-4.5t23.03 4.5q11 4.5 19 12.5l76 76q28 28 62.5 44.5T738-576v30q-46-5-87-24.5T578-622l-50-50-126 126 92 96v224h-28Zm134-520q-23 0-38.5-15.5T546-800q0-23 15.5-38.5T600-854q23 0 38.5 15.5T654-800q0 23-15.5 38.5T600-746Zm139.8 634Q670-112 621-161.2t-49-119q0-69.8 49.2-118.8t119-49q69.8 0 118.8 49.2t49 119q0 69.8-49.2 118.8t-119 49Zm-.04-28Q798-140 839-180.76q41-40.77 41-99Q880-338 839.24-379q-40.77-41-99-41Q682-420 641-379.24q-41 40.77-41 99Q600-222 640.76-181q40.77 41 99 41Z"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">TRAINING ELEMENTS</span>
+						</button>
+					</div>
+				</xpath>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_kojto_landingpage_form_inherit_control_races">
+			<field name="name">kojto.landingpage.form.inherit.control.races</field>
+			<field name="model">kojto.landingpage</field>
+			<field name="inherit_id" ref="kojto_landingpage.view_kojto_landingpage_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//comment()[.=' Button group 09 ']" position="after">
+					<!-- Control Races -->
+					<div class="landing_page_item">
+						<button name="open_sportobello_control_races_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+									<path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
+									<path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
+								</svg>
+							</div>
+							<span class="landing_page_text">CONTROL RACES</span>
+						</button>
+					</div>
+				</xpath>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_kojto_landingpage_form_inherit_competitions">
+			<field name="name">kojto.landingpage.form.inherit.competitions</field>
+			<field name="model">kojto.landingpage</field>
+			<field name="inherit_id" ref="kojto_landingpage.view_kojto_landingpage_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//comment()[.=' Button group 15 ']" position="after">
+					<!-- Competitions -->
+					<div class="landing_page_item">
+						<button name="open_sportobello_competitions_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="landing_page_svg_icon">
+                                    <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">COMPETITIONS</span>
+						</button>
+					</div>
+                    <div class="landing_page_item" style="margin: 0 !important; height: 0;" />
+                    <div class="landing_page_item" style="margin: 0 !important; height: 0;" />
+                    <div class="landing_page_item" style="margin: 0 !important; height: 0;" />
+                    <div class="landing_page_item" style="margin: 0 !important; height: 0;" />
+                    <div class="landing_page_item" style="margin: 0 !important; height: 0;" />
+				</xpath>
+			</field>
+		</record>
+        <!-- The Club button - appears before invoices (Button group 25) -->
+		<record model="ir.ui.view" id="view_kojto_landingpage_form_inherit_club">
+			<field name="name">kojto.landingpage.form.inherit.club</field>
+			<field name="model">kojto.landingpage</field>
+			<field name="inherit_id" ref="kojto_landingpage.view_kojto_landingpage_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//comment()[.=' Button group 25 ']" position="before">
+					<!-- Sportobello Sport Club - The Club -->
+					<div class="landing_page_item" groups="base.group_erp_manager,kojto_base.kojto_administrator,sportobello.group_sportobello_coaches">
+						<button name="open_sportobello_list_view" type="object" class="btn landing_page_button">
+							<div class="o_button_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="landing_page_svg_icon" fill="currentColor">
+                                    <path d="M260.61-349q-21.61 0-37.11-15.57T208-402q0-23 15.57-38T261-455q21.45 0 36.73 15Q313-425 313-402.5t-15.39 38q-15.39 15.5-37 15.5Zm438 0q-21.61 0-37.11-15.57T646-402q0-23 15.57-38T699-455q21.45 0 36.72 15Q751-425 751-402.5t-15.39 38q-15.39 15.5-37 15.5ZM481.5-387q-29.5 0-50.5-20.88T410-459q0-31 20.88-51.5T482-531q29 0 50.5 20.5t21.5 51q0 30.5-21.5 51.5t-51 21ZM319-172q13-56 57.88-92.5t105-36.5q60.12 0 104.62 36.5Q631-228 644-172H319Zm-187 0q0-54 37.5-91.5T261-301q17.28 0 32.52 4 15.25 4 29.48 12-21.86 22.59-36.43 51.79Q272-204 265.51-172H132Zm565 0q-6-33-20.5-62T639-286q14-7 28.68-11t31.32-4q54 0 91.5 37.5T828-172H697ZM112-512l-16-22 386-294 159 121v-81h67v132l160 122-17 22-369-281-370 281Z"/>
+                                </svg>
+							</div>
+							<span class="landing_page_text">THE CLUB</span>
+						</button>
+					</div>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

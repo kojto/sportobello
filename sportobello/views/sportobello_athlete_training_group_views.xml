@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Training Groups List View -->
+        <record model="ir.ui.view" id="view_sportobello_athlete_training_group_list">
+            <field name="name">sportobello.athlete.training.group.list</field>
+            <field name="model">sportobello.athlete.training.group</field>
+            <field name="arch" type="xml">
+                <list string="Training Groups" default_order="name" class="ko-list-main">
+                    <field name="name"/>
+                    <field name="athlete_ids" widget="many2many_tags"/>
+                </list>
+            </field>
+        </record>
+
+        <!-- Training Groups Form View -->
+        <record model="ir.ui.view" id="view_sportobello_athlete_training_group_form">
+            <field name="name">sportobello.athlete.training.group.form</field>
+            <field name="model">sportobello.athlete.training.group</field>
+            <field name="arch" type="xml">
+                <form string="Training Group">
+                    <link rel="stylesheet" type="text/css" href="/sportobello_kojto_inherit/static/src/css/custom.css"/>
+                    <style>
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="active"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="active"] {
+                            max-width: 100px !important; text-align: left !important;
+                        }
+                        .o_list_renderer tbody tr:has(td[colspan]:only-child):not(:has(a)) {
+                            display: none !important;
+                        }
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="identifier"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="identifier"] {
+                            max-width: 200px !important; text-align: left !important;
+                        }
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="athlete_full_name"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="athlete_full_name"] {
+                            max-width: 300px !important; text-align: left !important;
+                        }
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="athlete_birth_date"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="athlete_birth_date"] {
+                            max-width: 150px !important; text-align: left !important;
+                        }
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="athlete_gender"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="athlete_gender"] {
+                            max-width: 100px !important; text-align: left !important;
+                        }
+
+                        table > thead > tr {
+                            border-left: 1px solid rgba(11, 83, 148, 0.2) !important;
+                            border-right: 1px solid rgba(11, 83, 148, 0.2) !important;
+                            border-bottom: 1px solid rgba(11, 83, 148, 0.2) !important;
+                            border-top: 1px solid rgba(11, 83, 148, 0.2) !important;
+                        }
+
+                        table > thead > tr > th {
+                            border-left: 0px !important;
+                            border-right: 0px !important;
+                            border-bottom: 0px !important;
+                            border-top: 0px !important;
+                        }
+                    </style>
+                    <sheet>
+                        <div class="row">
+                            <group class="col-lg-6">
+                                <field name="name" placeholder="Enter Group Name"/>
+                            </group>
+                            <group class="col-lg-12">
+                                <field name="athlete_ids" widget="many2many_tags" options="{'no_create': True, 'no_create_edit': True, 'no_open': True}"/>
+                            </group>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Training Groups Search View -->
+        <record model="ir.ui.view" id="view_sportobello_athlete_training_group_search">
+            <field name="name">sportobello.athlete.training.group.search</field>
+            <field name="model">sportobello.athlete.training.group</field>
+            <field name="arch" type="xml">
+                <search string="Search Training Groups">
+                    <field name="name"/>
+                    <field name="athlete_ids"/>
+                    <filter string="Groups with Athletes" name="with_athletes" domain="[('athlete_ids', '!=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Training Groups Action -->
+        <record model="ir.actions.act_window" id="action_sportobello_athlete_training_group">
+            <field name="name">Training Groups</field>
+            <field name="res_model">sportobello.athlete.training.group</field>
+            <field name="view_mode">list,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create New Training Group
+                </p>
+                <p>
+                    Training groups allow you to organize athletes into different groups for easier management.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>

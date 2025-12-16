@@ -1,0 +1,10 @@
+<odoo>
+	<data>
+		<record id="group_sportobello_athletes" model="res.groups">
+			<field name="name">Athletes</field>
+		</record>
+		<record id="group_sportobello_coaches" model="res.groups">
+			<field name="name">Coaches</field>
+		</record>
+	</data>
+</odoo>

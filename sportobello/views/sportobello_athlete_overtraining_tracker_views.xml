@@ -1,0 +1,94 @@
+<odoo>
+	<data>
+		<!-- List Views -->
+		<record model="ir.ui.view" id="view_sportobello_athlete_overtraining_tracker_list">
+			<field name="name">sportobello.athlete.overtraining.tracker.list</field>
+			<field name="model">sportobello.athlete.overtraining.tracker</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="assessment_date desc" class="ko-list-main">
+					<field name="athlete_id"/>
+					<field name="assessment_date"/>
+					<field name="resting_heart_rate" optional="show"/>
+					<field name="heart_rate_recovery_1min" optional="show"/>
+					<field name="submaximal_exercise_heart_rate" optional="hide"/>
+					<field name="countermovement_jump_height" optional="hide"/>
+					<field name="sprint_time_trial" optional="hide"/>
+					<field name="blood_lactate_level" optional="hide"/>
+					<field name="create_date" optional="hide"/>
+				</list>
+			</field>
+		</record>
+
+		<!-- Form Views -->
+		<record model="ir.ui.view" id="view_sportobello_athlete_overtraining_tracker_form">
+			<field name="name">sportobello.athlete.overtraining.tracker.form</field>
+			<field name="model">sportobello.athlete.overtraining.tracker</field>
+			<field name="arch" type="xml">
+				<form>
+					<link rel="stylesheet" type="text/css" href="/sportobello_kojto_inherit/static/src/css/custom.css"/>
+					<sheet>
+						<div class="oe_title">
+							<h1>Overtraining Tracking</h1>
+						</div>
+						<div class="row">
+							<group class="col-lg-6">
+								<field name="athlete_id" options="{'no_quick_create':True,'no_create_edit':True,'no_open': True}"/>
+								<field name="assessment_date"/>
+							</group>
+						</div>
+						<div class="row">
+							<group class="col-lg-6">
+								<separator class="col-lg-12 separator" string="Heart Rate Metrics"/>
+								<field name="resting_heart_rate"/>
+								<field name="heart_rate_recovery_1min"/>
+								<field name="submaximal_exercise_heart_rate"/>
+							</group>
+							<group class="col-lg-6">
+								<separator class="col-lg-12 separator" string="Performance Metrics"/>
+								<field name="countermovement_jump_height"/>
+								<field name="sprint_time_trial"/>
+								<field name="blood_lactate_level"/>
+							</group>
+						</div>
+						<div class="row">
+							<group class="col-lg-12">
+								<separator class="col-lg-12 separator" string="Notes"/>
+								<field name="notes" placeholder="Additional Notes for Assessment"/>
+							</group>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<!-- Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_athlete_overtraining_tracker_search">
+			<field name="name">sportobello.athlete.overtraining.tracker.search</field>
+			<field name="model">sportobello.athlete.overtraining.tracker</field>
+			<field name="arch" type="xml">
+				<search string="Overtraining Tracking">
+					<field name="athlete_id"/>
+					<field name="assessment_date"/>
+					<separator/>
+					<filter name="recent" string="Last 30 Days" domain="[('assessment_date', '>=', (context_today() - datetime.timedelta(days=30)).strftime('%Y-%m-%d'))]"/>
+					<!-- Group By -->
+					<group expand="0" string="Group By">
+						<filter name="group_by_athlete" string="Athlete" context="{'group_by': 'athlete_id'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<!-- Actions -->
+		<record model="ir.actions.act_window" id="action_sportobello_athlete_overtraining_tracker">
+			<field name="name">Overtraining Tracking</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.athlete.overtraining.tracker</field>
+			<field name="view_mode">list,form</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Create First Overtraining Tracking Record.</p>
+			</field>
+		</record>
+	</data>
+</odoo>

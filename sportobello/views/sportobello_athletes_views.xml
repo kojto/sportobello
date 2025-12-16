@@ -1,0 +1,453 @@
+<odoo>
+	<data>
+		<!-- List Views -->
+		<record model="ir.ui.view" id="view_sportobello_athletes_list">
+			<field name="name">sportobello.athletes.list</field>
+			<field name="model">sportobello.athletes</field>
+			<field name="arch" type="xml">
+				<list limit="100" sample="1" default_order="create_date desc" class="ko-list-main">
+					<field name="active" widget="boolean_toggle"/>
+					<field name="athlete_full_name"/>
+					<field name="athlete_birth_date" optional="show"/>
+					<field name="athlete_gender"/>
+                    <field name="athlete_registry_number"/>
+                    <field name="athlete_recent_medical_exam_date"/>
+					<field name="athlete_phone" optional="show"/>
+					<field name="athlete_email" optional="show"/>
+                    <field name="training_group_ids" widget="many2many_tags" optional="show"/>
+					<field name="associated_user_id" column_invisible="1"/>
+					<button name="add_system_user_to_athlete" type="object" icon="fa-plus-square-o" invisible="associated_user_id" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Add System User to Athlete"/>
+				</list>
+			</field>
+		</record>
+		<!-- Form Views -->
+		<record model="ir.ui.view" id="view_sportobello_athletes_form">
+			<field name="name">sportobello.athletes.form</field>
+			<field name="model">sportobello.athletes</field>
+			<field name="arch" type="xml">
+				<form>
+					<link rel="stylesheet" type="text/css" href="/sportobello_kojto_inherit/static/src/css/custom.css"/>
+					<style>
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="active"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="active"] {
+                            max-width: 100px !important; text-align: left !important;
+                        }
+                        .o_list_renderer tbody tr:has(td[colspan]:only-child):not(:has(a)) {
+                            display: none !important;
+                        }
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="name"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="name"] {
+                            max-width: 800px !important; text-align: left !important;
+                        }
+
+                        /* Date columns and EPZ - 45px */
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="assessment_date"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="assessment_date"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="test_date"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="test_date"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="effective_pulse_zone"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="effective_pulse_zone"] {
+                            max-width: 45px !important; width: 45px !important; text-align: left !important;
+                        }
+
+                        /* Anthropometric tracker columns - 25px */
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="height"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="height"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="weight"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="weight"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="bmi"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="bmi"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="wingspan"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="wingspan"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="body_fat_percentage"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="body_fat_percentage"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="muscle_mass"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="muscle_mass"] {
+                            max-width: 25px !important; width: 25px !important; text-align: left !important;
+                        }
+
+                        /* Overtraining tracker columns - 25px */
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="resting_heart_rate"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="resting_heart_rate"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="heart_rate_recovery_1min"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="heart_rate_recovery_1min"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="submaximal_exercise_heart_rate"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="submaximal_exercise_heart_rate"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="countermovement_jump_height"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="countermovement_jump_height"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="sprint_time_trial"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="sprint_time_trial"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="blood_lactate_level"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="blood_lactate_level"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="grip_strength_left"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="grip_strength_left"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="grip_strength_right"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="grip_strength_right"] {
+                            max-width: 25px !important; width: 25px !important; text-align: left !important;
+                        }
+
+                        /* Functional test tracker columns - 25px */
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="hr_max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="hr_max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="vo2max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="vo2max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="vo2max_per_kg"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="vo2max_per_kg"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="w_max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="w_max"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="w_max_per_kg"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="w_max_per_kg"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="rq1_per_w"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="rq1_per_w"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="la2"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="la2"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="la6"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="la6"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="la15"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="la15"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="hr2"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="hr2"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table th[data-name="hr6"],
+                        .o_list_renderer.o_renderer.table-responsive .o_list_table td[name="hr6"] {
+                            max-width: 25px !important; width: 25px !important; text-align: left !important;
+                        }
+
+						table > thead > tr {
+						border-left: 1px solid rgba(11, 83, 148, 0.2) !important;
+						border-right: 1px solid rgba(11, 83, 148, 0.2) !important;
+						border-bottom: 1px solid rgba(11, 83, 148, 0.2) !important;
+						border-top: 1px solid rgba(11, 83, 148, 0.2) !important;
+						}
+
+						table > thead > tr > th {
+						border-left: 0px !important;
+						border-right: 0px !important;
+						border-bottom: 0px !important;
+						border-top: 0px !important;
+						}
+
+						/* Collapse icon toggle styles */
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-plus-lg,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-plus-lg-biometric,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-plus-lg-overtraining,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-plus-lg-functional {
+							display: inline-block !important;
+						}
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-dash-lg,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-dash-lg-biometric,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-dash-lg-overtraining,
+						button[data-bs-toggle="collapse"][aria-expanded="false"] .icon-dash-lg-functional {
+							display: none !important;
+						}
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-plus-lg,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-plus-lg-biometric,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-plus-lg-overtraining,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-plus-lg-functional {
+							display: none !important;
+						}
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-dash-lg.d-none,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-dash-lg-biometric.d-none,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-dash-lg-overtraining.d-none,
+						button[data-bs-toggle="collapse"][aria-expanded="true"] .icon-dash-lg-functional.d-none {
+							display: inline-block !important;
+						}
+					</style>
+					<sheet class="form-body">
+						<div class="oe_title">
+							<h1>Athlete</h1>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 d-flex">
+								<field name="athlete_first_name" placeholder="First Name"/>
+								<field name="athlete_middle_name" placeholder="Middle Name"/>
+								<field name="athlete_last_name" placeholder="Last Name"/>
+							    <button name="create_related_contact" type="object" class="btn btn-sm pt-0 pb-2" invisible="associated_contact_id" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Create Contact">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" color="#3f51b4" viewBox="0 0 16 16">
+										<path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+										<path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+									</svg>
+								</button>
+							    <button name="open_related_contact" type="object" class="btn btn-sm pt-0 pb-2" invisible="not associated_contact_id" groups="base.group_erp_manager,sportobello.group_sportobello_coaches" title="Open Contact">
+									<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" color="#3f51b4" viewBox="0 0 16 16">
+										<path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4m4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5M9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8m1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5"/>
+										<path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96q.04-.245.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 1 1 12z"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="row">
+                            <group class="col-lg-6" groups="base.group_erp_manager,sportobello.group_sportobello_coaches">
+                                <separator class="col-lg-12 separator"/>
+                                <field name="associated_contact_id"/>
+                                <field name="associated_user_id" options="{'no_open': True}"/>
+                                <field name="training_group_ids" widget="many2many_tags"/>
+                            </group>
+                            <group class="col-lg-6" groups="sportobello.group_sportobello_athletes">
+                                <separator class="col-lg-12 separator"/>
+                                <field name="associated_contact_id" readonly="1" invisible="not associated_contact_id"/>
+                                <field name="associated_user_id" readonly="1" invisible="not associated_user_id" options="{'no_open': True}"/>
+                                <field name="training_group_ids" widget="many2many_tags" readonly="1" invisible="not training_group_ids"/>
+                            </group>
+                            <group class="col-lg-6">
+                                <separator class="col-lg-12 separator"/>
+                                <field name="athlete_registry_number" placeholder="Registry Number"/>
+                                <field name="athlete_registry_institution" placeholder="Registry Institution"/>
+                                <field name="athlete_registry_date" placeholder="Registry Date"/>
+                                <field name="athlete_recent_medical_exam_date" placeholder="Recent Medical Exam Date"/>
+                            </group>
+                        </div>
+                        <div id="accordionSections">
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h4 class="mb-0">
+                                    <button class="btn btn-link text-decoration-none p-0 w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#parentEmergencySection" aria-expanded="false" aria-controls="parentEmergencySection" style="color: #184D8E;">
+                                        <span class="me-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="icon-plus-lg">
+                                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="d-none icon-dash-lg">
+                                                <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+                                            </svg>
+                                        </span>
+                                        <span class="fw-bold" style="color: #184D8E;">Personal Information</span>
+                                    </button>
+                                </h4>
+                            </div>
+                        </div>
+                        <!-- Collapsible Section -->
+                        <div class="collapse mb-3" id="parentEmergencySection" data-bs-parent="#accordionSections">
+                            <div class="card card-body border-0 bg-light mt-3 shadow-sm">
+                                <div class="row">
+                                    <group class="col-lg-6">
+                                        <separator class="col-lg-12 separator"/>
+                                        <field name="identifier" placeholder="ID Number"/>
+                                        <field name="athlete_birth_date" placeholder="Birth Date"/>
+                                        <field name="athlete_gender" placeholder="Gender" widget="selection_input"/>
+                                        <field name="athlete_nationality" placeholder="Nationality"/>
+                                        <field name="athlete_phone" placeholder="Phone"/>
+                                        <field name="athlete_email" placeholder="Email"/>
+                                    </group>
+                                    <group class="col-lg-6">
+                                        <separator class='col-lg-12 separator'/>
+                                        <field name="athlete_address_line" placeholder="Address"/>
+                                        <field name="athlete_city" placeholder="City"/>
+                                        <field name="athlete_county" placeholder="County"/>
+                                        <field name="athlete_country" placeholder="Country"/>
+                                        <field name="athlete_zip_code" placeholder="Zip Code"/>
+                                    </group>
+                                    <group class="col-lg-6">
+                                        <separator class="col-lg-12 separator" />
+                                        <field name="parent_first_name" placeholder="First Name"/>
+                                        <field name="parent_middle_name" placeholder="Middle Name"/>
+                                        <field name="parent_last_name" placeholder="Last Name"/>
+                                        <field name="parent_relationship" widget="selection_input"/>
+                                        <field name="parent_phone" placeholder="Phone"/>
+                                        <field name="parent_email" placeholder="Email"/>
+                                    </group>
+                                    <group class="col-lg-6">
+                                        <separator class="col-lg-12 separator" />
+                                        <field name="emergency_contact_name" placeholder="Name"/>
+                                        <field name="emergency_contact_phone" placeholder="Phone"/>
+                                        <field name="emergency_contact_relationship" placeholder="Relationship"/>
+                                    </group>
+                                    <group class="col-lg-12">
+                                        <separator class='col-lg-12 separator'/>
+                                        <field name="athlete_disease" placeholder="Diseases or Medical Conditions"/>
+                                        <field name="athlete_allergies" placeholder="Allergies and Reactions"/>
+                                    </group>
+                                </div>
+                            </div>
+                        </div>
+						<div class="row">
+							<div class="col-12">
+								<h4 class="mb-0">
+									<button class="btn btn-link text-decoration-none p-0 w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#biometricSection" aria-expanded="false" aria-controls="biometricSection" style="color: #184D8E;">
+										<span class="me-2">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="icon-plus-lg-biometric">
+												<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="d-none icon-dash-lg-biometric">
+												<path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+											</svg>
+										</span>
+										<span class="fw-bold" style="color: #184D8E;">Anthropometric Data</span>
+									</button>
+								</h4>
+							</div>
+						</div>
+						<!-- Collapsible Section -->
+						<div class="collapse mb-3" id="biometricSection" data-bs-parent="#accordionSections">
+							<div class="card card-body border-0 bg-light mt-3 shadow-sm">
+								<div class="row">
+									<div class="col-lg-12">
+										<field name="anthropometric_tracker_ids" nolabel="1" context="{'default_athlete_id': id}">
+											<list editable="bottom" order="assessment_date desc" class="ko-list-main">
+												<field name="assessment_date"/>
+												<field name="height"/>
+												<field name="weight"/>
+												<field name="bmi"/>
+												<field name="wingspan"/>
+												<field name="body_fat_percentage"/>
+												<field name="muscle_mass"/>
+											</list>
+										</field>
+										<div style="font-size: 0.75rem; color: #666; margin-top: 5px; padding-left: 5px; line-height: 1.6;">
+											<strong>Explanations:</strong><br/>
+											<strong>Height</strong> - Height in centimeters (cm)<br/>
+											<strong>Weight</strong> - Weight in kilograms (kg)<br/>
+											<strong>BMI</strong> - Body Mass Index<br/>
+											<strong>Wingspan</strong> - Wingspan in centimeters (cm)<br/>
+											<strong>BF%</strong> - Body Fat Percentage (%)<br/>
+											<strong>MM</strong> - Muscle Mass in kilograms (kg)
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<h4 class="mb-0">
+									<button class="btn btn-link text-decoration-none p-0 w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#overtrainingSection" aria-expanded="false" aria-controls="overtrainingSection" style="color: #184D8E;">
+										<span class="me-2">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="icon-plus-lg-overtraining">
+												<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="d-none icon-dash-lg-overtraining">
+												<path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+											</svg>
+										</span>
+										<span class="fw-bold" style="color: #184D8E;">Overtraining Tracking</span>
+									</button>
+								</h4>
+							</div>
+						</div>
+						<!-- Collapsible Section -->
+						<div class="collapse mb-3" id="overtrainingSection" data-bs-parent="#accordionSections">
+							<div class="card card-body border-0 bg-light mt-3 shadow-sm">
+								<div class="row">
+									<div class="col-lg-12">
+										<field name="overtraining_tracker_ids" nolabel="1" context="{'default_athlete_id': id}">
+											<list editable="bottom" order="assessment_date desc" class="ko-list-main">
+												<field name="assessment_date"/>
+												<field name="resting_heart_rate"/>
+												<field name="heart_rate_recovery_1min"/>
+												<field name="submaximal_exercise_heart_rate"/>
+												<field name="countermovement_jump_height"/>
+												<field name="sprint_time_trial"/>
+												<field name="blood_lactate_level"/>
+												<field name="grip_strength_left"/>
+												<field name="grip_strength_right"/>
+											</list>
+										</field>
+                                        <div style="font-size: 0.75rem; color: #666; margin-top: 5px; padding-left: 5px; line-height: 1.6;">
+                                            <strong>Explanations:</strong><br/>
+                                            <strong>RHR</strong> - Resting Heart Rate (bpm - beats per minute). Measured either as the lowest heart rate during the night or first thing in the morning before getting out of bed. RHR indicates baseline cardiovascular stress and recovery status. An unusually high RHR can signal fatigue, insufficient recovery, or overtraining.<br/>
+                                            <strong>HRR 1min</strong> - Heart Rate Recovery after 1 minute (bpm drop). The difference between peak heart rate at the end of exercise and heart rate after 1 minute of passive recovery. A slower recovery (smaller drop) can indicate fatigue, high training load, or autonomic imbalance.<br/>
+                                            <strong>Submax HR</strong> - Heart Rate at Submaximal Load (bpm). Measured during a standardized moderate-intensity effort, this indicates cardiovascular efficiency and adaptation. Higher-than-normal values may suggest fatigue or overreaching.<br/>
+                                            <strong>CMJ</strong> - Countermovement Jump (cm - centimeters). A measure of explosive lower-body power. Decreases over time can indicate neuromuscular fatigue or overtraining.<br/>
+                                            <strong>STT</strong> - Sprint Time Trial (seconds). Measures sprint performance over a fixed distance. Slower times may reflect muscular fatigue, poor recovery, or overreaching.<br/>
+                                            <strong>BLa</strong> - Blood Lactate Level at Standardized Load (mmol/L ×10 or μmol/L). Assesses metabolic stress during exercise. Elevated lactate at a given load can indicate reduced efficiency or fatigue accumulation.<br/>
+                                            <strong>GS L</strong> - Grip Strength Left (kg). Simple neuromuscular test for overall fatigue and muscle readiness. Significant drops may suggest systemic fatigue.<br/>
+                                            <strong>GS R</strong> - Grip Strength Right (kg). Same as above, for the right hand. Tracking both sides can highlight asymmetries caused by fatigue, injury, or overuse.<br/>
+                                            <em>Note:</em> Together, these parameters provide a holistic view of physiological, neuromuscular, and metabolic status, helping to detect early signs of overreaching or overtraining.
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12">
+								<h4 class="mb-0">
+									<button class="btn btn-link text-decoration-none p-0 w-100 text-start d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#functionalTestSection" aria-expanded="false" aria-controls="functionalTestSection" style="color: #184D8E;">
+										<span class="me-2">
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="icon-plus-lg-functional">
+												<path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+											</svg>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#184D8E" viewBox="0 0 16 16" class="d-none icon-dash-lg-functional">
+												<path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8"/>
+											</svg>
+										</span>
+										<span class="fw-bold" style="color: #184D8E;">Functional Testing</span>
+									</button>
+								</h4>
+							</div>
+						</div>
+						<!-- Collapsible Section -->
+						<div class="collapse mb-3" id="functionalTestSection" data-bs-parent="#accordionSections">
+							<div class="card card-body border-0 bg-light mt-3 shadow-sm">
+								<div class="row">
+									<div class="col-lg-12">
+										<field name="functional_test_tracker_ids" nolabel="1" context="{'default_athlete_id': id}">
+											<list editable="bottom" order="test_date desc" class="ko-list-main">
+												<field name="test_date"/>
+												<field name="hr_max"/>
+												<field name="vo2max"/>
+												<field name="vo2max_per_kg"/>
+												<field name="w_max"/>
+												<field name="w_max_per_kg"/>
+												<field name="effective_pulse_zone"/>
+												<field name="rq1_per_w"/>
+												<field name="la2"/>
+												<field name="la6"/>
+												<field name="la15"/>
+												<field name="hr2"/>
+												<field name="hr6"/>
+											</list>
+										</field>
+										<div style="font-size: 0.75rem; color: #666; margin-top: 5px; padding-left: 5px; line-height: 1.6;">
+											<strong>Explanations:</strong><br/>
+											<strong>Max HR</strong> - Maximum Heart Rate in beats per minute (bpm)<br/>
+											<strong>VO2max</strong> - Maximum Oxygen Capacity (ml/min)<br/>
+											<strong>VO2max/kg</strong> - Maximum Oxygen Capacity per kilogram (ml/min/kg)<br/>
+											<strong>MaxW</strong> - Maximum Power (W)<br/>
+											<strong>MaxW/kg</strong> - Maximum Power per kilogram (W/kg)<br/>
+											<strong>EPZ</strong> - Effective Pulse Zone<br/>
+											<strong>RQ1/W</strong> - Respiratory Quotient at 1W<br/>
+											<strong>La2</strong> - Lactate after 2 minutes (mmol/L)<br/>
+											<strong>La6</strong> - Lactate after 6 minutes (mmol/L)<br/>
+											<strong>La15</strong> - Lactate after 15 minutes (mmol/L)<br/>
+											<strong>HR2</strong> - Heart Rate after 2 minutes (bpm)<br/>
+											<strong>HR6</strong> - Heart Rate after 6 minutes (bpm)
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<!-- Search Views -->
+		<record model="ir.ui.view" id="view_sportobello_athletes_search">
+			<field name="name">sportobello.athletes.search</field>
+			<field name="model">sportobello.athletes</field>
+			<field name="arch" type="xml">
+				<search>
+					<field name="athlete_full_name"/>
+					<field name="identifier"/>
+					<field name="athlete_phone"/>
+					<field name="athlete_email"/>
+					<separator/>
+					<filter name="male" domain="[('athlete_gender','=','male')]"/>
+					<filter name="female" domain="[('athlete_gender','=','female')]"/>
+					<group expand="1">
+						<filter name="athlete_gender" context="{'group_by':'athlete_gender'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+		<!-- Actions to Return Model Views -->
+		<record model="ir.actions.act_window" id="action_sportobello_athletes">
+			<field name="name">Athletes</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">sportobello.athletes</field>
+			<field name="view_mode">list,form</field>
+			<field name="domain">[]</field>
+			<field name="context">{}</field>
+			<field name="help" type="html">
+				<p class="o_view_nocontent_smiling_face">Register Athlete</p>
+			</field>
+		</record>
+	</data>
+</odoo>
