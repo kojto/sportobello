@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * sportobello_kojto_inherit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.4\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-09 09:18+0000\n"
+"PO-Revision-Date: 2025-12-09 10:30+0000\n"
+"Last-Translator: Вашето име <your.email@example.com>\n"
+"Language-Team: Bulgarian\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Grok 4\n"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_admin_buttons
+msgid "<span class=\"landing_page_text\">ASSETS</span>"
+msgstr "<span class=\"landing_page_text\">АКТИВИ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_replace_apps
+msgid "<span class=\"landing_page_text\">Apps</span>"
+msgstr "<span class=\"landing_page_text\">Приложения</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_finance_buttons
+msgid "<span class=\"landing_page_text\">CASHFLOW</span>"
+msgstr "<span class=\"landing_page_text\">ПАРИЧЕН ПОТОК</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_admin_buttons
+msgid "<span class=\"landing_page_text\">CODES</span>"
+msgstr "<span class=\"landing_page_text\">КОДОВЕ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_admin_buttons
+msgid "<span class=\"landing_page_text\">CONTACTS</span>"
+msgstr "<span class=\"landing_page_text\">КОНТАКТИ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_admin_buttons
+msgid "<span class=\"landing_page_text\">CONTRACTS</span>"
+msgstr "<span class=\"landing_page_text\">ДОГОВОРИ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_admin_buttons
+msgid "<span class=\"landing_page_text\">EMPLOYEES</span>"
+msgstr "<span class=\"landing_page_text\">СЛУЖИТЕЛИ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_finance_buttons
+msgid "<span class=\"landing_page_text\">INVOICES</span>"
+msgstr "<span class=\"landing_page_text\">ФАКТУРИ</span>"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_replace_settings
+msgid "<span class=\"landing_page_text\">Settings</span>"
+msgstr "<span class=\"landing_page_text\">Настройки</span>"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.ui.menu,name:sportobello_kojto_inherit.menu_sportobello_landingpage_administration
+msgid "Administration"
+msgstr "Администриране"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_invoices__code
+msgid "Code"
+msgstr "Код"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_cashflow__display_name
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_cashflow_allocation__display_name
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_invoices__display_name
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_landingpage__display_name
+msgid "Display Name"
+msgstr "Име за показване"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_cashflow__id
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_cashflow_allocation__id
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_invoices__id
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_landingpage__id
+msgid "ID"
+msgstr "ИД"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model,name:sportobello_kojto_inherit.model_kojto_finance_cashflow
+msgid "Kojto Finance Cashflow"
+msgstr "Kojto Finance Паричен поток"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model,name:sportobello_kojto_inherit.model_kojto_finance_cashflow_allocation
+msgid "Kojto Finance Cashflow Allocation"
+msgstr "Kojto Finance Разпределение на паричния поток"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model,name:sportobello_kojto_inherit.model_kojto_finance_invoices
+msgid "Kojto Finance Invoice"
+msgstr "Kojto Finance Фактура"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model,name:sportobello_kojto_inherit.model_kojto_landingpage
+msgid "Kojto Landing Page"
+msgstr "Начална страница"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_invoices__subcode_is_active
+msgid "Subcode is Active"
+msgstr "Подкодът е активен"
+
+#. module: sportobello_kojto_inherit
+#: model:ir.model.fields,field_description:sportobello_kojto_inherit.field_kojto_finance_invoices__user_id
+msgid "User"
+msgstr "Потребител"
+
+#. module: sportobello_kojto_inherit
+#: model_terms:ir.ui.view,arch_db:sportobello_kojto_inherit.view_kojto_landingpage_form_inherit_add_footer
+msgid "© 2024 Sportobello. All Rights Reserved."
+msgstr "© 2024 Sportobello. Всички права запазени."

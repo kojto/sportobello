@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <menuitem name="Administration" id="menu_sportobello_landingpage_administration" sequence="100"/>
+
+		<menuitem name="Commission Codes" id="kojto_commission_codes.menu_commission_codes" parent="menu_sportobello_landingpage_administration" sequence="10" />
+        <menuitem name="Base Modules" id="kojto_base.menu_kojto_base" parent="menu_sportobello_landingpage_administration" sequence="20"/>
+		<menuitem name="Contacts" id="kojto_contacts.menu_kojto_contacts" parent="menu_sportobello_landingpage_administration" sequence="30" action="kojto_contacts.action_kojto_contacts"/>
+		<menuitem name="Contracts" id="kojto_contracts.menu_kojto_contracts_parent" parent="menu_sportobello_landingpage_administration" sequence="40"/>
+		<menuitem name="Employees" id="kojto_hr.menu_kojto_hr_employees_parent" parent="menu_sportobello_landingpage_administration" sequence="50" />
+		<menuitem name="Assets" id="kojto_assets.menu_kojto_asset_parent" parent="menu_sportobello_landingpage_administration" sequence="70" />
+    </data>
+</odoo>
